@@ -1,11 +1,12 @@
 # reflect
 A c++ type reflection system  
-###Introduction  
+### Introduction  
 **reflect** is a very simple but powerful c++ reflection system, you may find it useful in you projection,espcially in projects which need codegen or serialization(codegen python code from cplusclpus)  
-###Build  
-Please use cmake for build, just run the flowing cmd  
+### Build  
+Please use cmake having version at least 3.0  
+For build, just run the flowing cmd  
 ***mkdir build && cd build && make***  
-###Tutorial  
+### Tutorial  
 A very simple c++ example is presented.  
 ```cpp
 class PhoneNumber{
