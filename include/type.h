@@ -82,7 +82,7 @@ public:
         if (GetTypes().find(name) != GetTypes().end())
             THROW_EXCEPTION(TypeAlreadyExists, "there is already a type named '" + name + "'");
 
-        //std::cout << "register class " << name << std::endl;
+        std::cout << "register class " << name << std::endl;
 
         const_cast<Type*>(type)->name = name;
         const_cast<Type*>(type)->baseType = baseType;

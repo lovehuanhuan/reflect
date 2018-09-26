@@ -52,7 +52,6 @@ Type* Type::AddConstructors(const std::vector<const Constructor*>& constructors)
 
 const Constructor* Type::GetConstructor(const std::vector<QualifiedType>& paramTypes) const{
     std::vector<const Constructor*> matches;
-
     for (auto c : constructors){
         if (MatchParams(c->GetParamTypes(), paramTypes))//c->GetParamTypes() == paramTypes)
             return c;//matches.push_back(c);
